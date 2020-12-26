@@ -36,7 +36,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live Demo Link <a name = "ll"></a>
 
-[Link Demo](https://.herokuapp.com/)
+[Link Demo](https://deepbookstore.herokuapp.com/)
 
 
 ## Getting Started <a name = "gs"></a>
