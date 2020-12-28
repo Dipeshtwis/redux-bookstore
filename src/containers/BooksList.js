@@ -1,3 +1,5 @@
+import Book from '../components/Book';
+
 const BooksList = () => {
   return (
      <table>
@@ -7,9 +9,7 @@ const BooksList = () => {
          <th>category</th>
        </tr>
        <tr>
-         <td></td>
-         <td></td>
-         <td></td>
+         {Book}
        </tr>
      </table> 
   );
