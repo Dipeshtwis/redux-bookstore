@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import BooksList from '../containers/BooksList';
 import BooksForm from '../containers/BooksForm';
 

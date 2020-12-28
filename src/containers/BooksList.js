@@ -1,18 +1,14 @@
 import Book from '../components/Book';
 
-const BooksList = () => {
-  return (
+const BooksList = () => (
      <table>
        <tr>
-         <th>Book ID</th>
+         <th>BookId</th>
          <th>title</th>
          <th>category</th>
        </tr>
-       <tr>
-         {Book}
-       </tr>
-     </table> 
-  );
-}
+       {Book}
+     </table>
+);
 
 export default BooksList;
