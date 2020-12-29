@@ -12,8 +12,9 @@ const BooksList = ({ books }) => {
        <thead>
          <tr className = "book-row">
           <th className = "book-header">BookId</th>
-          <th className = "book-header">title</th>
-          <th className = "book-header">category</th>
+          <th className = "book-header">Title</th>
+          <th className = "book-header">Category</th>
+          <th className = "book-header">Action</th>
          </tr>
        </thead>
        <tbody>
