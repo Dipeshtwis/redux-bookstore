@@ -25,3 +25,27 @@ code {
     'Courier New',
     monospace;
 }
+
+.app {
+  text-align: center;
+}
+
+.book-show-div {
+  margin: 40px 50px;
+}
+
+.book-table {
+  width: 1000px;
+}
+
+.book-header {
+  background-color: cyan;
+}
+
+.book-row {
+  height: 40px;
+}
+
+.book-column {
+  background-color: whitesmoke;
+}
