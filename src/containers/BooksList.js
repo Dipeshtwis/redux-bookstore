@@ -5,7 +5,7 @@ import { removeBookAction } from '../actions/index';
 
 const BooksList = ({ books, removeBook }) => {
   const handleRemoveBook = (book) => removeBook(book);
-  const allBook = books.map(book => (<Book key = {`book-${book.bookId}`} book = {book} deleteAction = {() => handleRemoveBook(book)} />));
+  const allBook = books.map(book => (<Book key = {`book-${book.bookId}`} book = {book} deleteBook = {() => handleRemoveBook(book)} />));
 
   return (
     <div className = "book-show-div">

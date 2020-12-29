@@ -7,17 +7,18 @@ const Book = ({ book, deleteBook }) => {
       <td className = "book-column">{bookId}</td>
       <td className = "book-column">{title}</td>
       <td className = "book-column">{category}</td>
-      <td className = "book-column"><button type="button" onClick="deleteBook">Delete</button></td>
+      <td className = "book-column"><button type="button" onClick={deleteBook} >Delete</button></td>
     </tr>
   );
 };
 
 Book.propTypes = {
   book: PropTypes.shape({
-    bookId: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    category: PropTypes.string.isRequired,
-  }),
+    bookId: PropTypes.string,
+    title: PropTypes.string,
+    category: PropTypes.string,
+  }).isRequired,
+  deleteBook: PropTypes.func.isRequired,
 };
 
 export default Book;
