@@ -1,6 +1,6 @@
 # React Bookstore
 
-In this milestone I've added the whole folder structure, form, react components, and reducer actions.
+In this milestone I've added the add and delete book functionality.
 
 <div align="center">
 

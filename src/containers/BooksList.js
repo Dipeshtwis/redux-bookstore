@@ -1,7 +1,9 @@
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import Book from '../components/Book';
 import { removeBookAction } from '../actions/index';
+/* eslint-disable no-unused-vars */
+import Book from '../components/Book';
+
 
 const BooksList = ({ books, removeBook }) => {
   const handleRemoveBook = (book) => removeBook(book);
