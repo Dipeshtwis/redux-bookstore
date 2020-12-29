@@ -2,7 +2,7 @@ const BooksForm = () => {
   // eslint-disable-next-line no-unused-vars
   const category = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   return (
-    <div>
+    <>
       <h2>Add Book here</h2>
       <form>
         <label for="title">Book title:</label>
@@ -15,7 +15,7 @@ const BooksForm = () => {
         <label for="kids"> Kids</label>
         <button type="submit">Submit</button>
       </form>
-    </div>
+    </>
   );
 };
 
