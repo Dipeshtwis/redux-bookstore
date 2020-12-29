@@ -5,7 +5,7 @@ const BooksList = ({ books }) => {
   const allBook = books.map(book => (<Book key = {`book-${book.bookId}`} book = {book} />));
 
   return (
-    <>
+    <div className = "book-show-div">
      <table>
        <thead>
          <tr>
@@ -18,7 +18,7 @@ const BooksList = ({ books }) => {
          {allBook}
        </tbody>
      </table>
-    </>
+    </div>
   );
 };
 

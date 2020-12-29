@@ -2,7 +2,7 @@ import { CREATE_BOOK, REMOVE_BOOK } from '../actions/index';
 
 const initialState = {
   books: [
-    { bookId: 1, title: 'Understanding in C++', category: 'Programming' },
+    { bookId: 1, title: 'Understanding in C', category: 'Programming' },
     { bookId: 2, title: 'Baby names 2020', category: 'Kids' },
     { bookId: 3, title: 'The Hunger', category: 'Horror' },
     { bookId: 4, title: 'Beloved', category: 'Horror' },

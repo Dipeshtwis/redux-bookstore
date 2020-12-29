@@ -25,3 +25,11 @@ code {
     'Courier New',
     monospace;
 }
+
+.app {
+  text-align: center;
+}
+
+.book-show-div {
+  margin: 40px 500px;
+}
