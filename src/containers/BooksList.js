@@ -1,6 +1,5 @@
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-/* eslint-disable no-unused-vars */
 import Book from '../components/Book';
 import { removeBookAction } from '../actions/index';
 
