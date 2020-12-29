@@ -31,7 +31,7 @@ In this milestone I've added the add and delete book functionality.
 ## Project Screenshot <a name = "sc"></a>
 
 
-![GUI](src/assets/img/mile2.png)
+![GUI](src/assets/img/mile3.png)
 
 
 ## Live Demo Link <a name = "ll"></a>
