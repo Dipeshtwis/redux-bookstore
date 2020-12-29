@@ -1,4 +1,6 @@
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+/* eslint-disable no-unused-vars */
 import Book from '../components/Book';
 
 const BooksList = ({ books }) => {
@@ -20,6 +22,10 @@ const BooksList = ({ books }) => {
      </table>
     </div>
   );
+};
+
+BooksList.propTypes = {
+  books: PropTypes.arrayOf.isRequired,
 };
 
 const mapStateToProps = (state) => ({ books: state.bookReducer.books });
