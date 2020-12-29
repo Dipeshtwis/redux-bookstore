@@ -1,11 +1,12 @@
+import { v4 as uuidv4 } from 'uuid';
 import { CREATE_BOOK, REMOVE_BOOK } from '../actions/index';
 
 const initialState = {
   books: [
-    { bookId: 1, title: 'Understanding in C', category: 'Programming' },
-    { bookId: 2, title: 'Baby names 2020', category: 'Kids' },
-    { bookId: 3, title: 'The Hunger', category: 'Horror' },
-    { bookId: 4, title: 'Beloved', category: 'Horror' },
+    { bookId: uuidv4(), title: 'Understanding in C', category: 'Programming' },
+    { bookId: uuidv4(), title: 'Baby names 2020', category: 'Kids' },
+    { bookId: uuidv4(), title: 'The Hunger', category: 'Horror' },
+    { bookId: uuidv4(), title: 'Beloved', category: 'Horror' },
   ],
 };
 

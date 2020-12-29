@@ -8,12 +8,12 @@ const BooksList = ({ books }) => {
 
   return (
     <div className = "book-show-div">
-     <table>
+     <table className = "book-table">
        <thead>
-         <tr>
-          <th>BookId</th>
-          <th>title</th>
-          <th>category</th>
+         <tr className = "book-row">
+          <th className = "book-header">BookId</th>
+          <th className = "book-header">title</th>
+          <th className = "book-header">category</th>
          </tr>
        </thead>
        <tbody>

@@ -31,5 +31,21 @@ code {
 }
 
 .book-show-div {
-  margin: 40px 500px;
+  margin: 40px 50px;
+}
+
+.book-table {
+  width: 1000px;
+}
+
+.book-header {
+  background-color: cyan;
+}
+
+.book-row {
+  height: 40px;
+}
+
+.book-column {
+  background-color: whitesmoke;
 }

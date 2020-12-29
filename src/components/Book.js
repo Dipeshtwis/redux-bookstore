@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 const Book = ({ book }) => {
   const { bookId, title, category } = book;
   return (
-    <tr>
-      <td>{bookId}</td>
-      <td>{title}</td>
-      <td>{category}</td>
+    <tr className = "book-row">
+      <td className = "book-column">{bookId}</td>
+      <td className = "book-column">{title}</td>
+      <td className = "book-column">{category}</td>
     </tr>
   );
 };
