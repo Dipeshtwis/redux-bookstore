@@ -25,7 +25,7 @@ const BooksList = ({ books }) => {
 };
 
 BooksList.propTypes = {
-  books: PropTypes.arrayOf.isRequired,
+  books: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 const mapStateToProps = (state) => ({ books: state.bookReducer.books });
