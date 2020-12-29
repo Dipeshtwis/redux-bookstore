@@ -1,7 +1,10 @@
 import Book from '../components/Book';
 
-const BooksList = () => (
-    <div>
+const BooksList = ({ books }) => {
+  const allBook = books.map(book => (<Book key = {`book-${book.bookId}`} book = {book} />));
+
+  return (
+    <>
      <table>
        <thead>
          <tr>
@@ -11,10 +14,11 @@ const BooksList = () => (
          </tr>
        </thead>
        <tbody>
-         {Book}
+         {allBook}
        </tbody>
      </table>
-    </div>
-);
+    </>
+  );
+};
 
 export default BooksList;
