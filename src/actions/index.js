@@ -3,10 +3,10 @@ export const REMOVE_BOOK = 'REMOVE_BOOK';
 
 export const createBookAction = (book) => ({
   type: CREATE_BOOK,
-  payload: book,
+  book,
 });
 
 export const removeBookAction = (book) => ({
   type: REMOVE_BOOK,
-  payload: book,
+  book,
 });
