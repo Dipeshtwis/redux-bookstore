@@ -2,9 +2,11 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 /* eslint-disable no-unused-vars */
 import Book from '../components/Book';
+import { removeBookAction } from '../actions/index';
 
-const BooksList = ({ books }) => {
-  const allBook = books.map(book => (<Book key = {`book-${book.bookId}`} book = {book} />));
+const BooksList = ({ books, removeBook }) => {
+  const handleRemoveBook = (book) => removeBook(book);
+  const allBook = books.map(book => (<Book key = {`book-${book.bookId}`} book = {book} deleteAction = {() => handleRemoveBook(book)} />));
 
   return (
     <div className = "book-show-div">
@@ -30,5 +32,6 @@ BooksList.propTypes = {
 };
 
 const mapStateToProps = (state) => ({ books: state.books });
+const mapDispatchToProps = (dispatch) => ({ removeBook: book => dispatch(removeBookAction(book)) });
 
-export default connect(mapStateToProps, null)(BooksList);
+export default connect(mapStateToProps, mapDispatchToProps)(BooksList);
