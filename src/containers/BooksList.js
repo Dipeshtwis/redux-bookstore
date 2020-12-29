@@ -1,3 +1,4 @@
+import { connect } from 'react-redux';
 import Book from '../components/Book';
 
 const BooksList = ({ books }) => {
@@ -21,4 +22,6 @@ const BooksList = ({ books }) => {
   );
 };
 
-export default BooksList;
+const mapStateToProps = (state) => ({ books: state.bookReducer.books });
+
+export default connect(mapStateToProps, null)(BooksList);

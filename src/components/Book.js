@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 
 const Book = ({ book }) => {
-  const { BookId, title, category } = book;
+  const { bookId, title, category } = book;
   return (
     <tr>
-      <td>{BookId}</td>
+      <td>{bookId}</td>
       <td>{title}</td>
       <td>{category}</td>
     </tr>
