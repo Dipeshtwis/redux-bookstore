@@ -5,7 +5,7 @@ import bookFilterReducer from './filter';
 
 const rootReducer = combineReducers({
   books: bookReducer,
-  filter: bookFilterReducer
+  filter: bookFilterReducer,
 });
 
 const initialState = {
