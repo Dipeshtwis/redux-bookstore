@@ -2,7 +2,6 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { removeBookAction, changeFilterAction } from '../actions/index';
 import CategoryFilter from '../components/CategoryFilter';
-/* eslint-disable no-unused-vars */
 import Book from '../components/Book';
 
 const BooksList = ({

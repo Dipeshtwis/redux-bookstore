@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { createBookAction } from '../actions/index';
 
 const BooksForm = ({ createBook }) => {
-  const Category = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+  const categoryArray = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   const [state, setState] = useState({ title: '', category: '' });
   const handleChange = ({ target: { name, value } }) => {
     setState({ ...state, [name]: value });
@@ -36,7 +36,7 @@ const BooksForm = ({ createBook }) => {
           <option value="default">
             Select a category
           </option>
-          {Category.map(category => (
+          {categoryArray.map(category => (
             <option key={category} value={category}>
               {category}
             </option>

@@ -1,6 +1,6 @@
 import { CHANGE_FILTER } from '../actions/index';
 
-const bookFilterReducer = (state = '', action) => {
+const bookFilterReducer = (state = 'All', action) => {
   switch (action.type) {
     case CHANGE_FILTER:
       return action.filter;
