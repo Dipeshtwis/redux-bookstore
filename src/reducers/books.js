@@ -1,21 +1,18 @@
-import { v4 as uuidv4 } from 'uuid';
 import { CREATE_BOOK, REMOVE_BOOK } from '../actions/index';
 
-const initialState = {
-  books: [
-    { bookId: uuidv4(), title: 'Understanding in C', category: 'Programming' },
-    { bookId: uuidv4(), title: 'Baby names 2020', category: 'Kids' },
-    { bookId: uuidv4(), title: 'The Hunger', category: 'Horror' },
-    { bookId: uuidv4(), title: 'Beloved', category: 'Horror' },
-  ],
-};
-
-const bookReducer = (state = initialState, action) => {
+const bookReducer = (state = [], action) => {
   switch (action.type) {
     case CREATE_BOOK:
-      return { ...state, newBook: action.payload };
+      return [
+        ...state,
+        {
+          bookId: action.book.bookId,
+          title: action.book.title,
+          category: action.book.category,
+        },
+      ];
     case REMOVE_BOOK:
-      return state.filter(book => book.bookId !== action.bookId);
+      return state.filter(book => book.bookId !== action.book.bookId);
     default:
       return state;
   }

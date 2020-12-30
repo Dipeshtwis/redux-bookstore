@@ -1,22 +1,57 @@
-const BooksForm = () => {
-  // eslint-disable-next-line no-unused-vars
-  const category = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+import { useState } from 'react';
+import { connect } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
+import PropTypes from 'prop-types';
+import { createBookAction } from '../actions/index';
+
+const BooksForm = ({ createBook }) => {
+  const Category = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+  const [state, setState] = useState({ title: '', category: '' });
+  const handleChange = ({ target: { name, value } }) => {
+    setState({ ...state, [name]: value });
+  };
+
+  const { title, category } = state;
+  const handleSubmit = e => {
+    e.preventDefault();
+    createBook({
+      bookId: uuidv4(),
+      title,
+      category,
+    });
+    setState({ title: '', category: '' });
+  };
+
   return (
     <>
       <h2>Add Book here</h2>
-      <form>
-        <label htmlFor="title">Book title:</label>
-        <input type="text" id="title" name="title" placeholder="Title of the book" />
-        <input type="checkbox" id="action" name="action" value="Bike" />
-        <label htmlFor="action"> Action</label>
-        <input type="checkbox" id="history" name="history" value="Car" />
-        <label htmlFor="history"> History</label>
-        <input type="checkbox" id="kids" name="kids" value="Boat" />
-        <label htmlFor="kids"> Kids</label>
+      <form onSubmit={handleSubmit}>
+        <input type="text" value={state.title || ''} onChange={handleChange} id="title" name="title" placeholder="Title of the book" required />
+        <select
+          onChange={handleChange}
+          name="category"
+          value={state.category}
+          required
+        >
+          <option value="default">
+            Select a category
+          </option>
+          {Category.map(category => (
+            <option key={category} value={category}>
+              {category}
+            </option>
+          ))}
+        </select>
         <button type="submit">Submit</button>
       </form>
     </>
   );
 };
 
-export default BooksForm;
+BooksForm.propTypes = {
+  createBook: PropTypes.func.isRequired,
+};
+
+const mapDispatchToProps = dispatch => ({ createBook: book => dispatch(createBookAction(book)) });
+
+export default connect(null, mapDispatchToProps)(BooksForm);
