@@ -1,6 +1,6 @@
 # React Bookstore
 
-In this milestone I've added the add and delete book functionality.
+In this milestone I've added the filter book by ccategory functionality.
 
 <div align="center">
 
@@ -32,6 +32,10 @@ In this milestone I've added the add and delete book functionality.
 
 
 ![GUI](src/assets/img/mile3.png)
+
+## Filtered Book
+
+![FB](src/assets/img/mile4.png)
 
 
 ## Live Demo Link <a name = "ll"></a>
