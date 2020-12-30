@@ -12,7 +12,7 @@ const BooksForm = ({ createBook }) => {
   };
 
   const { title, category } = state;
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
     createBook({
       bookId: uuidv4(),
@@ -26,7 +26,6 @@ const BooksForm = ({ createBook }) => {
     <>
       <h2>Add Book here</h2>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="title">Book title:</label>
         <input type="text" value={state.title || ''} onChange={handleChange} id="title" name="title" placeholder="Title of the book" required />
         <select
           onChange={handleChange}
