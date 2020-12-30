@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import PropTypes from 'prop-types';
 import { createBookAction } from '../actions/index';
+import allCategory from '../utils/utils';
 
 const BooksForm = ({ createBook }) => {
-  const Category = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   const [state, setState] = useState({ title: '', category: '' });
   const handleChange = ({ target: { name, value } }) => {
     setState({ ...state, [name]: value });
@@ -36,11 +36,7 @@ const BooksForm = ({ createBook }) => {
           <option value="default">
             Select a category
           </option>
-          {Category.map(category => (
-            <option key={category} value={category}>
-              {category}
-            </option>
-          ))}
+          {allCategory}
         </select>
         <button type="submit">Submit</button>
       </form>

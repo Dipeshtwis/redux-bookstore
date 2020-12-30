@@ -1,9 +1,11 @@
 import { createStore, combineReducers } from 'redux';
 import { v4 as uuidv4 } from 'uuid';
 import bookReducer from './books';
+import bookFilterReducer from './filter';
 
 const rootReducer = combineReducers({
   books: bookReducer,
+  filter: bookFilterReducer,
 });
 
 const initialState = {
@@ -13,6 +15,7 @@ const initialState = {
     { bookId: uuidv4(), title: 'The Hunger', category: 'Horror' },
     { bookId: uuidv4(), title: 'Beloved', category: 'Horror' },
   ],
+  filter: 'All',
 };
 
 const store = createStore(rootReducer, initialState);
