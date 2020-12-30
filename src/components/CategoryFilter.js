@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 
-const CategoryFilter = ({ handleFilter }) => {
+const CategoryFilter = ({ handleFilterChange }) => {
   const Category = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   return (
     <div>
       <h2>Select book with specific category</h2>
       <select
-        onChange={handleFilter}
+        onChange={handleFilterChange}
         name="category"
         required
       >
@@ -24,7 +24,7 @@ const CategoryFilter = ({ handleFilter }) => {
 };
 
 CategoryFilter.propTypes = {
-  handleFilter: PropTypes.func.isRequired,
+  handleFilterChange: PropTypes.func.isRequired,
 };
 
 export default CategoryFilter;
