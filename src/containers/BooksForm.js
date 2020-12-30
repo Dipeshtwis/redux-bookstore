@@ -35,8 +35,8 @@ const BooksForm = ({ createBook }) => {
         >
           <option value="default">
             Select a category
-          </option>     
-              {allCategory}
+          </option>
+          {allCategory}
         </select>
         <button type="submit">Submit</button>
       </form>
