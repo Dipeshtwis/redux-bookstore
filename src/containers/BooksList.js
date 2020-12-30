@@ -11,7 +11,7 @@ const BooksList = ({
   const handleRemoveBook = book => removeBook(book);
   const handleFilterChange = e => changeFilterAction(e.target.value);
   const filteredBook = filter === 'All' ? books : books.filter(book => book.category === filter);
-  const allBook = books.map(book => (<Book key={`book-${book.bookId}`} book={book} deleteBook={() => handleRemoveBook(book)} />));
+  const allBook = filteredBook.map(book => (<Book key={`book-${book.bookId}`} book={book} deleteBook={() => handleRemoveBook(book)} />));
 
   return (
     <div className="book-show-div">
