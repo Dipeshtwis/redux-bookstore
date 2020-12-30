@@ -9,6 +9,9 @@ const CategoryFilter = ({ handleFilterChange }) => (
       name="category"
       required
     >
+      <option value="All">
+        All
+      </option>
       {allCategory}
     </select>
   </div>
