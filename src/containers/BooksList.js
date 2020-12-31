@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { FaUser } from 'react-icons/fa';
 import { removeBookAction, changeFilterAction } from '../actions/index';
 import CategoryFilter from '../components/CategoryFilter';
 import Book from '../components/Book';
@@ -13,21 +14,29 @@ const BooksList = ({
   const allBook = filteredBook.map(book => (<Book key={`book-${book.bookId}`} book={book} deleteBook={() => handleRemoveBook(book)} />));
 
   return (
-    <div className="book-show-div">
-      <CategoryFilter handleFilterChange={handleFilterChange} />
-      <table className="book-table">
-        <thead>
-          <tr className="book-row">
-            <th className="book-header">BookId</th>
-            <th className="book-header">Title</th>
-            <th className="book-header">Category</th>
-            <th className="book-header">Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {allBook}
-        </tbody>
-      </table>
+    <div>
+      <div className="nav-bar">
+        <div className="navbar-left">
+          <div>
+            <h2 className="bookstore-name">Bookstore CMS</h2>
+          </div>
+          <div className="nav-element">
+            <p className="nav-text">BOOKS</p>
+          </div>
+          <div className="nav-element">
+            <p className="nav-text">CATEGORIES</p>
+          </div>
+          <CategoryFilter handleFilterChange={handleFilterChange} />
+        </div>
+        <div className="navbar-right">
+          <div className="icon">
+            <FaUser className="icon__main" />
+          </div>
+        </div>
+      </div>
+      <div className="book-show-div">
+        {allBook}
+      </div>
     </div>
   );
 };

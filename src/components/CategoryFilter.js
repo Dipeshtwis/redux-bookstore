@@ -2,11 +2,11 @@ import PropTypes from 'prop-types';
 import allCategory from '../utils/utils';
 
 const CategoryFilter = ({ handleFilterChange }) => (
-  <>
-    <h2>Select book with specific category</h2>
+  <div className="filter-box">
     <select
       onChange={handleFilterChange}
       name="category"
+      className="filter-box-select"
       required
     >
       <option value="All">
@@ -14,7 +14,7 @@ const CategoryFilter = ({ handleFilterChange }) => (
       </option>
       {allCategory}
     </select>
-  </>
+  </div>
 );
 
 CategoryFilter.propTypes = {
