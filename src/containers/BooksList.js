@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { FaUser } from 'react-icons/fa';
 import { removeBookAction, changeFilterAction } from '../actions/index';
 import CategoryFilter from '../components/CategoryFilter';
 import Book from '../components/Book';
@@ -28,7 +29,9 @@ const BooksList = ({
           <CategoryFilter handleFilterChange={handleFilterChange} />
         </div>
         <div className="navbar-right">
-          <div className="icon">Icon</div>
+          <div className="icon">
+            <FaUser className="icon__main" />
+          </div>
         </div>
       </div>
       <div className="book-show-div">
