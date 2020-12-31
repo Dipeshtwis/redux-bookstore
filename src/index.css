@@ -26,8 +26,43 @@ code {
     monospace;
 }
 
+:root {
+  --primary-color: #0290ff;
+  --secondary-color: #ffffff;
+}
+
+.nav-bar {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: var(--secondary-color);
+}
+
+.navbar-left {
+  display: flex;
+}
+
+.navbar-left div h2 {
+  color: var(--primary-color);
+  margin-left: 20px;
+}
+
+.nav-element {
+  margin: 16px 13px 12px 13px;
+  font-size: 13px;
+  color: #121212;
+}
+
+.filter-box {
+  margin: 26px 5px 0 0;
+}
+
+.icon {
+  padding-top: 20px;
+}
+
 .app {
   text-align: center;
+  background-color: #f5f6fa;
 }
 
 .book-show-div {
@@ -36,10 +71,6 @@ code {
 
 .book-table {
   width: 1000px;
-}
-
-.book-header {
-  background-color: cyan;
 }
 
 .book-row {
