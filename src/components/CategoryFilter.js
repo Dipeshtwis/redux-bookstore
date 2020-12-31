@@ -6,6 +6,7 @@ const CategoryFilter = ({ handleFilterChange }) => (
     <select
       onChange={handleFilterChange}
       name="category"
+      className="filter-box-select"
       required
     >
       <option value="All">

@@ -18,7 +18,7 @@ const BooksList = ({
       <div className="nav-bar">
         <div className="navbar-left">
           <div>
-            <h2>Bookstore CMS</h2>
+            <h2 className="bookstore-name">Bookstore CMS</h2>
           </div>
           <div className="nav-element">
             <p className="nav-text">BOOKS</p>
