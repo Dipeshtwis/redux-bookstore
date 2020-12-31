@@ -1,14 +1,32 @@
 import PropTypes from 'prop-types';
 
 const Book = ({ book, deleteBook }) => {
-  const { bookId, title, category } = book;
+  const { title, category } = book;
   return (
-    <tr className="book-row">
-      <td className="book-column">{bookId}</td>
-      <td className="book-column">{title}</td>
-      <td className="book-column">{category}</td>
-      <td className="book-column"><button type="button" onClick={deleteBook}>Delete</button></td>
-    </tr>
+    <div className="book-row">
+      <div>
+        <p>{category}</p>
+        <h3>{title}</h3>
+        <p>Frank Herbert</p>
+        <div>
+          <ul>
+            <li><button type="button">Comments</button></li>
+            <li><button type="button" onClick={deleteBook}>Delete</button></li>
+            <li><button type="button">Edit</button></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div>Hey</div>
+        <span>64%</span>
+        <p>Completed</p>
+      </div>
+      <div>
+        <p>CURRENT CHAPTER</p>
+        <h4>Chapter 17</h4>
+        <button type="button">UPDATE PROGRESS</button>
+      </div>
+    </div>
   );
 };
 

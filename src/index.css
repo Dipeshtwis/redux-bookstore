@@ -69,6 +69,11 @@ code {
   margin: 40px 50px;
 }
 
+.book-row {
+  display: flex;
+  justify-content: space-between;
+}
+
 .book-table {
   width: 1000px;
 }
