@@ -24,7 +24,7 @@ const Book = ({ book, deleteBook }) => {
       <div className="book-row-right">
         <p>CURRENT CHAPTER</p>
         <h4>Chapter 17</h4>
-        <button type="button">UPDATE PROGRESS</button>
+        <button className="right-button" type="button">UPDATE PROGRESS</button>
       </div>
     </div>
   );

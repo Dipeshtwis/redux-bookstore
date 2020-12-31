@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: none;
 }
 
 body {
@@ -72,6 +71,7 @@ code {
 
 .icon {
   padding-top: 20px;
+  margin-left: 10px;
 }
 
 .book-row {
@@ -79,10 +79,6 @@ code {
   justify-content: space-around;
   background-color: var(--secondary-color);
   margin: 10px 0;
-}
-
-.book-row {
-
 }
 
 .book-para {
@@ -103,6 +99,25 @@ code {
   padding-right: 12px;
 }
 
+.book-row-right p {
+  font-size: 13px;
+  padding: 2px 0;
+}
+
+.book-row-right h4 {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.right-button {
+  background-color: var(--primary-color);
+  padding: 7px 19px;
+  border-radius: 3px;
+  color: var(--secondary-color);
+  font-size: 13px;
+  font-weight: 300;
+}
+
 button {
+  border: none;
   background-color: var(--secondary-color);
 }
