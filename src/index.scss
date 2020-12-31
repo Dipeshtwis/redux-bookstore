@@ -165,6 +165,7 @@ code {
   font-size: 16px;
   padding-bottom: 10px;
 }
+
 .right-button {
   background-color: var(--primary-color);
   padding: 7px 19px;
@@ -172,6 +173,43 @@ code {
   color: var(--secondary-color);
   font-size: 13px;
   font-weight: 300;
+}
+
+.add-book {
+  background-color: var(--secondary-color);
+}
+
+.add-book h2 {
+  font-size: 20px;
+  color: #888888;
+  padding: 10px;
+}
+
+.add-form {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-form input {
+  margin-top: 19px;
+  padding: 9px 271px 9px 10px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+}
+
+.add-form select {
+  margin: 19px 34px 0;
+  padding: 6px 95px 9px 16px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+}
+
+.add-form button {
+  margin-top: 19px;
+  padding: 7px 52px;
 }
 
 button {
