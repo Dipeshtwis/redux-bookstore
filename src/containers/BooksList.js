@@ -32,11 +32,7 @@ const BooksList = ({
         </div>
       </div>
       <div className="book-show-div">
-        <table className="book-table">
-          <tbody>
-            {allBook}
-          </tbody>
-        </table>
+        {allBook}
       </div>
     </div>
   );

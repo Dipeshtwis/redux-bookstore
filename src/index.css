@@ -1,3 +1,10 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family:
@@ -31,10 +38,17 @@ code {
   --secondary-color: #ffffff;
 }
 
+.app {
+  padding: 20px;
+  text-align: center;
+  background-color: #f5f6fa;
+}
+
 .nav-bar {
   display: grid;
   grid-template-columns: 3fr 1fr;
   background-color: var(--secondary-color);
+  padding: 10px;
 }
 
 .navbar-left {
@@ -53,33 +67,22 @@ code {
 }
 
 .filter-box {
-  margin: 26px 5px 0 0;
+  margin: 16px 5px 0 0;
 }
 
 .icon {
   padding-top: 20px;
 }
 
-.app {
-  text-align: center;
-  background-color: #f5f6fa;
-}
-
-.book-show-div {
-  margin: 40px 50px;
-}
-
 .book-row {
   display: flex;
-  justify-content: space-between;
-}
-
-.book-table {
-  width: 1000px;
+  justify-content: space-around;
+  background-color: var(--secondary-color);
+  margin: 10px 0;
 }
 
 .book-row {
-  height: 40px;
+  height: 140px;
 }
 
 .book-column {
