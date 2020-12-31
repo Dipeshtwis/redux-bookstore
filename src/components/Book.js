@@ -4,11 +4,11 @@ const Book = ({ book, deleteBook }) => {
   const { title, category } = book;
   return (
     <div className="book-row">
-      <div>
+      <div className="book-row-left">
         <p className="book-para">{category}</p>
         <h3>{title}</h3>
         <p className="book-para text-blue">Frank Herbert</p>
-        <div className="book-row-left">
+        <div>
           <ul className="action-list">
             <li><button className="text-blue" type="button">Comments</button></li>
             <li><button className="text-blue" type="button" onClick={deleteBook}>Delete</button></li>

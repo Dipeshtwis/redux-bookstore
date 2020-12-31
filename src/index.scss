@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: none;
 }
 
 body {
@@ -38,7 +39,6 @@ code {
 }
 
 .app {
-  padding: 20px;
   background-color: #f5f6fa;
 }
 
@@ -67,6 +67,12 @@ code {
 
 .filter-box {
   margin: 16px 5px 0 0;
+
+  select {
+    border: solid 1px #e8e8e8;
+    border-radius: 4px;
+    padding-left: 15px;
+  }
 }
 
 .icon {
@@ -87,16 +93,20 @@ code {
   }
 }
 
+.book-show-div {
+  padding: 20px;
+}
 .book-row {
   display: flex;
   justify-content: space-around;
   background-color: var(--secondary-color);
   margin: 10px 0;
+  align-items: center;
 }
 
 .book-para {
   font-size: 14px;
-  padding: 2px 0;
+  padding: 3px 0;
 }
 
 .text-blue {
@@ -114,7 +124,6 @@ code {
 
 .book-row-middle {
  display: flex;
- align-items: center;
 }
 
 .oval {
@@ -192,6 +201,7 @@ code {
 
 .add-book {
   background-color: var(--secondary-color);
+  margin-top: 8px;
 
   h2 {
     font-size: 20px;
@@ -226,6 +236,5 @@ form {
 }
 
 button {
-  border: none;
   background-color: var(--secondary-color);
 }
