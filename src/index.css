@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: none;
 }
 
 body {
@@ -40,7 +41,6 @@ code {
 
 .app {
   padding: 20px;
-  text-align: center;
   background-color: #f5f6fa;
 }
 
@@ -82,9 +82,27 @@ code {
 }
 
 .book-row {
-  height: 140px;
+
 }
 
-.book-column {
-  background-color: whitesmoke;
+.book-para {
+  font-size: 14px;
+  padding: 2px 0;
+}
+
+.text-blue {
+  color: #4386bf;
+}
+
+.action-list {
+  padding: 10px 0;
+}
+
+.action-list li {
+  display: inline-block;
+  padding-right: 12px;
+}
+
+button {
+  background-color: var(--secondary-color);
 }
