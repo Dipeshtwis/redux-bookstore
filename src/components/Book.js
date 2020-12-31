@@ -17,9 +17,11 @@ const Book = ({ book, deleteBook }) => {
         </div>
       </div>
       <div className="book-row-middle">
-        <div>Hey</div>
-        <span>64%</span>
-        <p>Completed</p>
+        <div className="oval oval-64" />
+        <div>
+          <p className="oval-number">64%</p>
+          <p className="oval-text">Completed</p>
+        </div>
       </div>
       <div className="book-row-right">
         <p>CURRENT CHAPTER</p>
