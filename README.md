@@ -1,6 +1,6 @@
 # React Bookstore
 
-In this milestone I've added the filter book by ccategory functionality.
+In this milestone I've added the style to the application.
 
 <div align="center">
 
@@ -31,11 +31,7 @@ In this milestone I've added the filter book by ccategory functionality.
 ## Project Screenshot <a name = "sc"></a>
 
 
-![GUI](src/assets/img/mile3.png)
-
-## Filtered Book
-
-![FB](src/assets/img/mile4.png)
+![GUI](src/assets/img/mile5.png)
 
 
 ## Live Demo Link <a name = "ll"></a>
