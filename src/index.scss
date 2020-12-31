@@ -238,3 +238,9 @@ form {
     padding: 7px 52px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .bookstore-name {
+    font-size: 18px;
+  }
+}
